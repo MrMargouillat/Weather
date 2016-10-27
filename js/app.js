@@ -77,7 +77,7 @@ function requestWeater(elem , str){
 				}
 				else if(id === 801)
 				{
-					elem.querySelector(".logoW	eather").innerText = "A"
+					elem.querySelector(".logoWeather").innerText = "A"
 				}
 				else if(id === 802)
 				{
