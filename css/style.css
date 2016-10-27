@@ -1,276 +1,369 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
-body {
-    font-family: 'PT Sans', sans-serif;
-    border: 0;
+@import 'https://fonts.googleapis.com/css?family=Roboto:300|Source+Code+Pro';
+body
+{
+    font-size: 16px;
+    border: none;
+    padding: 0;
     margin: 0;
-    padding: 0;
-}
-.with--sidebar--right, .with--sidebar--left
-{
-	overflow: hidden;
-}
-.container {
     width: 100%;
-    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111d2b; 
 }
-
-header {
-    width: 100%;
-    background-color: rgb(49, 53, 61);
-    text-align: center;
-    padding: 10px 0;
-	z-index: 2;
-}
-
-.user
+.hideOverflow
 {
-	text-align: center;
+    overflow: hidden;
 }
-.userImg
+header
 {
-	font-family: 'icomoon', sans-serif;
-	color: white;
-	width: 100px;
-	height: 100px;
-	line-height: 100px;
-	height: auto;
-	font-size: 50px;
-	border: solid 3px white;
-	border-radius:50%; 
-	margin: auto;
+    margin-bottom: 300px;
 }
-
-.leftMenu, .rightMenu
+h1
 {
-	position: absolute;
-	width: 70%;
-	padding: 10px; 
-	top: 64px;
-	
-	height: 100%;
-    background-color: rgb(36, 39, 45);
-	z-index: 1;
-    overflow: scroll;
+    margin: 0;
 }
-.leftMenu
-{
-	transform: translateX(-100%);
-	left: 0;
-}
-.rightMenu
-{
-	transform: translateX(100%);
-	right: 0;
-}
-
-.with--sidebar--right .rightMenu, .with--sidebar--left .leftMenu
-{
-	transform: translateX(0); 
-	transition: 0.3s;
-}
-
-.listMenu
-{
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	font-size: 1.3em;
-}
-.listMenu:last-child
-{
-	border-bottom: solid white 1px;
-}
-.linkListMenu a
-{
-	
-	text-decoration: none;
-	color: white;
-
-}
-.linkListMenu{
-	padding: 10px;
-	border-top: solid white 1px;
-}
-
-.listProducts {
-    margin: 10px auto;
-    width: auto;
-}
-
-.listProducts ul {
-    margin: 20px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-li img {
-    width: 200px;
-}
-
-.itemApp {
-    display: block;
-    position: relative;
-    width: auto;
-    margin: 1em;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.titleApp {
-    margin: 15px;
-    font-size: 1.2em;
-}
-
-.menu_icon {
-	z-index: 3;
-    font-family: 'icomoon', sans-serif;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(67, 87, 121);
-    width: 64px;
-    height: 64px;
-    line-height: 64px;
-    color: white;
-    font-size: 40px;
-    text-align: center;
-	cursor: pointer; 
-}
-
-.user_icon {
-	z-index: 3;
-    font-family: 'icomoon', sans-serif;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgb(67, 87, 121);
-    width: 64px;
-    height: 64px;
-    line-height: 64px;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-	cursor: pointer; 
-}
-#logo
-{
-    display: inline-block;
-}
-.with--sidebar--left .site-cache, .with--sidebar--right .site-cache
-{
-	position:absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	background-color:rgba(0,0,0,0.6);
-}
-
-.myaccount
-{
-    margin-top: 20px;
-}
-.btn-important
+a
 {
     text-decoration: none;
-    padding: 5px;
-    color: white;
-    border: 2px solid white;
 }
-.btn-important:hover
+p a
 {
-    color: rgb(49, 53, 61);
-    padding: 5px;
-    background-color: white;
-    border: 2px solid white;
+    color: inherit;
 }
-
-.cache-image:hover {
-    background: rgba(0,0,0,0.2);
-}
-.cache-image {
-    transition: all .25s ease;
-    cursor: pointer;
-    height: 100%;
-    left: 0;
+.welcomeMsg
+{
     position: absolute;
-    top: 0;
+    z-index: 90;
+    
+    top: 50%;
+    left: 50%;
+    margin-left: -550px;
+    margin-top: -175px; 
+    font-size: 3.75em;
+    width: 750px;
+    color: white;
+    font-family: 'Source Code Pro' ,'Kumar One', 'Dosis','Oxygen','Open Sans', sans-serif;
+}
+
+.btnNav
+{
+    border: solid 2px white;
+    padding: 3px;
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.nav
+{
+    position: absolute;
+    z-index: 1000;
+    font-size: 1.31em;
+    right: 50px;
+    top: 20px;
+}
+.content
+{
+    
+    padding: 50px;
+}
+.welcomeMsg p
+{
+    margin: 0;
+}
+
+
+@keyframes coder
+{
+    from { right: -70px;}
+    to { right: 25%;}
+}
+
+.pCredits
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 2px;
+    font-size: 1em;
+    color: white;
+}
+.credits
+{
+    font-weight: bold;
+}
+.nav_child
+{
+    list-style: none;
+    width: 100px;
+}
+.nav_child a
+{
+    border: solid 2px white;
+    background: white;
+    padding: 3px;
+    display: inline-block;
+    text-decoration: none;
+    color: #111d2b;
+}
+
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	}
+
+
+/* Hide Dropdowns by Default */
+nav ul {
+	display: none;
+	position: relative; 
+    right: -10em;
+    opacity: 0;
+    
+}
+	
+/* Display Dropdowns on Hover */
+.with--sidebar ul {
+	display:inherit;
+    opacity: 1;
+}
+
+nav div
+{
+    display: inline;
+}
+nav div a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+.imgBackStanding
+{
+min-width: 140px;
+min-height: 510px;
+width: auto;
+height: auto;
+position: absolute;
+bottom: 0;
+background-image: url(../img/01-grand.png);
+background-repeat: no-repeat;
+background-size: 140px 510px;
+z-index: 1;
+margin-right: -70px;
+right: 25%;
+animation-name: coder;
+animation-duration: 10s;
+}
+
+.imgBackComputer
+{
+min-width: 300px;
+min-height: 341px;
+width: auto;
+height: auto;
+position: absolute;
+top: 150px;
+right: 50%;
+background-image: url(../img/01-ordi.png);
+background-repeat: no-repeat;
+background-size: 300px auto;
+z-index: 1;
+margin-right: -150px;
+}
+.placeHolder
+{
+    height: 50px;
+    width: auto;
+    padding-bottom: 200px; 
+}
+.titleContainer
+{
+    color: white;
+    font-size: 2em;
+}
+.container
+{
+    padding: 3em 18.75em;
+}
+.containerContact
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.wrap
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.linkContainer
+{
+    width: 215px !important;
+    padding: 7px;
+    padding-top: 13px;
+}
+.linkContainerTitle
+{
+    font-size: 1.17em;
+    text-align: center;
+    margin-bottom: 0;
+}
+.roundPlaceholder
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+}
+.roundIcon
+{
+    margin: auto;
+    color: #111d2b;
+    font-size: 3em;
+}
+.containerWork
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.roundFacebook:hover
+{
+    background: #477eda;
+    transition: background 0.3s;
+}
+.roundTwitter:hover
+{
+    background: #03d0fc;
+    transition: background 0.3s;
+}
+.roundGoogle:hover
+{
+    background: #d91e00;
+    transition: background 0.3s;
+}
+@media screen and (max-width: 1100px)
+{
+    /* Rédigez vos propriétés CSS ici */
+    
+    body
+    {
+        font-size: 10px;
+    }
+    .containerContact
+    {
+        padding: 10px 1em;
+    }
+    .welcomeMsg
+    {
+        width: 450px;
+        margin-left: -225px;
+    }
+    nav ul
+    {
+        right: -12em;
+    }
+}
+
+
+
+
+
+
+
+
+
+.cardWhite
+{
+    width: 500px;
+    max-height: 700px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px rgba(22, 22, 22, 0.5);
+    background: white;
+    color: black;
+}
+
+.cardDark
+{
+    width: 500px;
+    max-height: 700px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px rgba(22, 22, 22, 0.5);
+    background: #546e7a;
+    color: white;
+}
+
+.cardContainer
+{
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    border: none;
+}
+.cardTitle
+{
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.cardDark .cardLink
+{
+    margin-top: 10px;
+    padding-top: 10px;
     width: 100%;
+    border-top: 1px yellow solid;
+}
+.cardDark .link
+{
+    transition: color 0.5s;
+    color: yellow;
+    text-decoration: none;
+}
+.cardWhite .cardLink
+{
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 100%;
+    border-top: 1px red solid;
+}
+.cardWhite .link
+{
+    transition: color 0.5s;
+    color: red;
+    text-decoration: none;
 }
 
-@media only screen and ( min-width: 1280px) {
-	.rightMenu{
-		width: 15%;
-		position: fixed;
-	}
-
-
-
-
-
-
-    .leftMenu{
-        display: inline-block;  
-        position: initial;
-        transform: translateX(0);
-        border: initial;
-        margin: initial;
-        padding: initial;
-        overflow: visible;
-        background: none;
-    }
-    .listMenu:last-child
-    {
-        border-bottom: none;
-    }
-    .menu_icon{
-        display: none;
-    }
-
-    header
-    {
-        text-align: left;
-    }
-    .linkListMenu
-    {
-        display: inline;
-        border: 0;
-        padding: 0;
-        display:inline-block;
-        vertical-align:middle;
+.link:hover
+{
+    color: white;
 }
 
-
-
-
-
-	.site-cache{
-		display: none;
-	}
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    .container {
-        margin-top: 100px;
-    }
-    .listProducts ul {
-        margin: 50px 15%;
-    }
-    li img {
-        width: 250px;
-    }
+.cardImg
+{
+    width: inherit;
+    height: auto;
+    border: none;
+    margin-bottom: -5px;
 }
-
-@media only screen and ( min-width: 1920px) {
-    .listProducts ul {
-        margin: 50px 20%;
-    }
-    li img {
-        width: 300px;
-    }
+.cardImgContainer
+{
+    width: inherit;
+    height: auto;
+    border: none;
 }
-
+.cardContainer .icon-more_vert
+{
+    font-size: 23px;
+    text-align: right;
+    cursor: pointer; 
+}
