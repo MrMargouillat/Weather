@@ -119,6 +119,17 @@ body {
     font-size: 125px;
     color: #c0364d;
     position: absolute;
-    bottom: 0px;
+    bottom: -5px;
     right: 10px;
+}
+
+@media only screen and ( max-width: 500px) {
+    .container
+    {
+        padding: 0;
+    }
+    .cardLight
+    {
+        width: 100%;
+    }
 }
