@@ -1,2 +1,2 @@
 # Weather
-A very simple page displaying wather info
+A very simple page displaying weather info
