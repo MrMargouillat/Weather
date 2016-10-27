@@ -1,4 +1,10 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:300|Source+Code+Pro';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300';
+@font-face {
+  font-family: 'ico';
+  src:  url('../fonts/artill_clean_icons.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 body
 {
     font-size: 16px;
@@ -7,43 +13,8 @@ body
     margin: 0;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background: #111d2b; 
+    background: #1F222A; 
 }
-.hideOverflow
-{
-    overflow: hidden;
-}
-header
-{
-    margin-bottom: 300px;
-}
-h1
-{
-    margin: 0;
-}
-a
-{
-    text-decoration: none;
-}
-p a
-{
-    color: inherit;
-}
-.welcomeMsg
-{
-    position: absolute;
-    z-index: 90;
-    
-    top: 50%;
-    left: 50%;
-    margin-left: -550px;
-    margin-top: -175px; 
-    font-size: 3.75em;
-    width: 750px;
-    color: white;
-    font-family: 'Source Code Pro' ,'Kumar One', 'Dosis','Oxygen','Open Sans', sans-serif;
-}
-
 .btnNav
 {
     border: solid 2px white;
@@ -115,20 +86,9 @@ nav ul {
 	}
 
 
-/* Hide Dropdowns by Default */
-nav ul {
-	display: none;
-	position: relative; 
-    right: -10em;
-    opacity: 0;
-    
-}
+
 	
-/* Display Dropdowns on Hover */
-.with--sidebar ul {
-	display:inherit;
-    opacity: 1;
-}
+
 
 nav div
 {
@@ -141,45 +101,7 @@ nav div a
 }
 
 
-.imgBackStanding
-{
-min-width: 140px;
-min-height: 510px;
-width: auto;
-height: auto;
-position: absolute;
-bottom: 0;
-background-image: url(../img/01-grand.png);
-background-repeat: no-repeat;
-background-size: 140px 510px;
-z-index: 1;
-margin-right: -70px;
-right: 25%;
-animation-name: coder;
-animation-duration: 10s;
-}
 
-.imgBackComputer
-{
-min-width: 300px;
-min-height: 341px;
-width: auto;
-height: auto;
-position: absolute;
-top: 150px;
-right: 50%;
-background-image: url(../img/01-ordi.png);
-background-repeat: no-repeat;
-background-size: 300px auto;
-z-index: 1;
-margin-right: -150px;
-}
-.placeHolder
-{
-    height: 50px;
-    width: auto;
-    padding-bottom: 200px; 
-}
 .titleContainer
 {
     color: white;
@@ -281,7 +203,7 @@ margin-right: -150px;
 
 
 
-.cardWhite
+.cardLight
 {
     width: 500px;
     max-height: 700px;
@@ -290,6 +212,7 @@ margin-right: -150px;
     box-shadow: 5px 5px 10px rgba(22, 22, 22, 0.5);
     background: white;
     color: black;
+    position: relative;
 }
 
 .cardDark
@@ -316,6 +239,11 @@ margin-right: -150px;
     font-size: 24px;
     font-weight: 300;
 }
+.cardWord:first-letter
+{
+    text-transform: uppercase;
+}
+
 .cardDark .cardLink
 {
     margin-top: 10px;
@@ -367,3 +295,15 @@ margin-right: -150px;
     text-align: right;
     cursor: pointer; 
 }
+
+
+.logoWeather
+{
+    font-family: "ico", sans-serif;
+    font-size: 125px;
+    color: #c0364d;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+}
+
