@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+body {
+    font-family: 'PT Sans', sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.with--sidebar--right, .with--sidebar--left
+{
+	overflow: hidden;
+}
+.container {
+    width: 100%;
+    min-height: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(49, 53, 61);
+    text-align: center;
+    padding: 10px 0;
+	z-index: 2;
+}
+
+.user
+{
+	text-align: center;
+}
+.userImg
+{
+	font-family: 'icomoon', sans-serif;
+	color: white;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	height: auto;
+	font-size: 50px;
+	border: solid 3px white;
+	border-radius:50%; 
+	margin: auto;
+}
+
+.leftMenu, .rightMenu
+{
+	position: absolute;
+	width: 70%;
+	padding: 10px; 
+	top: 64px;
+	
+	height: 100%;
+    background-color: rgb(36, 39, 45);
+	z-index: 1;
+    overflow: scroll;
+}
+.leftMenu
+{
+	transform: translateX(-100%);
+	left: 0;
+}
+.rightMenu
+{
+	transform: translateX(100%);
+	right: 0;
+}
+
+.with--sidebar--right .rightMenu, .with--sidebar--left .leftMenu
+{
+	transform: translateX(0); 
+	transition: 0.3s;
+}
+
+.listMenu
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 1.3em;
+}
+.listMenu:last-child
+{
+	border-bottom: solid white 1px;
+}
+.linkListMenu a
+{
+	
+	text-decoration: none;
+	color: white;
+
+}
+.linkListMenu{
+	padding: 10px;
+	border-top: solid white 1px;
+}
+
+.listProducts {
+    margin: 10px auto;
+    width: auto;
+}
+
+.listProducts ul {
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+li img {
+    width: 200px;
+}
+
+.itemApp {
+    display: block;
+    position: relative;
+    width: auto;
+    margin: 1em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.titleApp {
+    margin: 15px;
+    font-size: 1.2em;
+}
+
+.menu_icon {
+	z-index: 3;
+    font-family: 'icomoon', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(67, 87, 121);
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+	cursor: pointer; 
+}
+
+.user_icon {
+	z-index: 3;
+    font-family: 'icomoon', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(67, 87, 121);
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+	cursor: pointer; 
+}
+#logo
+{
+    display: inline-block;
+}
+.with--sidebar--left .site-cache, .with--sidebar--right .site-cache
+{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:rgba(0,0,0,0.6);
+}
+
+.myaccount
+{
+    margin-top: 20px;
+}
+.btn-important
+{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    border: 2px solid white;
+}
+.btn-important:hover
+{
+    color: rgb(49, 53, 61);
+    padding: 5px;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.cache-image:hover {
+    background: rgba(0,0,0,0.2);
+}
+.cache-image {
+    transition: all .25s ease;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@media only screen and ( min-width: 1280px) {
+	.rightMenu{
+		width: 15%;
+		position: fixed;
+	}
+
+
+
+
+
+
+    .leftMenu{
+        display: inline-block;  
+        position: initial;
+        transform: translateX(0);
+        border: initial;
+        margin: initial;
+        padding: initial;
+        overflow: visible;
+        background: none;
+    }
+    .listMenu:last-child
+    {
+        border-bottom: none;
+    }
+    .menu_icon{
+        display: none;
+    }
+
+    header
+    {
+        text-align: left;
+    }
+    .linkListMenu
+    {
+        display: inline;
+        border: 0;
+        padding: 0;
+        display:inline-block;
+        vertical-align:middle;
+}
+
+
+
+
+
+	.site-cache{
+		display: none;
+	}
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .container {
+        margin-top: 100px;
+    }
+    .listProducts ul {
+        margin: 50px 15%;
+    }
+    li img {
+        width: 250px;
+    }
+}
+
+@media only screen and ( min-width: 1920px) {
+    .listProducts ul {
+        margin: 50px 20%;
+    }
+    li img {
+        width: 300px;
+    }
+}
+
