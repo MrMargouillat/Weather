@@ -7,7 +7,6 @@
 		<meta content="width=device-width, initial-scale=0.25, maximum-scale=0.25,minimum-scale=0.25, user-scalable=0" name="viewport">
 		<meta http-equiv="pragma" content="no-cache" />
 		<link href="css/style.css" rel="stylesheet">
-		<link href="style.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
@@ -74,9 +73,6 @@
 						</div>
 						
 					</div>
-		<footer>
-			<p class="pCredits">Big thanks to <strong class="credits">Héloise Guillot</strong></p>
-		</footer>
 		<script src="./js/app.js"></script>
 	</body>
 </html>

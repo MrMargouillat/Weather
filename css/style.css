@@ -1,210 +1,51 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300';
 @font-face {
-  font-family: 'ico';
-  src:  url('../fonts/artill_clean_icons.otf');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'ico';
+    src: url('../fonts/artill_clean_icons.otf');
+    font-weight: normal;
+    font-style: normal;
 }
-body
-{
+
+body {
     font-size: 16px;
     border: none;
     padding: 0;
     margin: 0;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background: #1F222A; 
+    background: #1F222A;
 }
-.btnNav
-{
-    border: solid 2px white;
-    padding: 3px;
-    margin: 5px;
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}
-.nav
-{
-    position: absolute;
-    z-index: 1000;
-    font-size: 1.31em;
-    right: 50px;
-    top: 20px;
-}
-.content
-{
-    
-    padding: 50px;
-}
-.welcomeMsg p
-{
-    margin: 0;
-}
-
-
-@keyframes coder
-{
-    from { right: -70px;}
-    to { right: 25%;}
-}
-
-.pCredits
-{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 2px;
-    font-size: 1em;
-    color: white;
-}
-.credits
-{
-    font-weight: bold;
-}
-.nav_child
-{
-    list-style: none;
-    width: 100px;
-}
-.nav_child a
-{
-    border: solid 2px white;
-    background: white;
-    padding: 3px;
-    display: inline-block;
-    text-decoration: none;
-    color: #111d2b;
-}
-
-nav ul {
-	padding: 0;
-    margin: 0;
-	list-style: none;
-	position: relative;
-	}
-
-
-
-	
-
-
-nav div
-{
-    display: inline;
-}
-nav div a
-{
-    color: white;
-    text-decoration: none;
-}
-
-
-
-.titleContainer
-{
+.titleContainer {
     color: white;
     font-size: 2em;
 }
-.container
-{
+
+.container {
     padding: 3em 18.75em;
 }
-.containerContact
-{
+
+.containerContact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.wrap
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.linkContainer
-{
+
+
+.linkContainer {
     width: 215px !important;
     padding: 7px;
     padding-top: 13px;
 }
-.linkContainerTitle
-{
+
+.linkContainerTitle {
     font-size: 1.17em;
     text-align: center;
     margin-bottom: 0;
 }
-.roundPlaceholder
-{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: white;
-    margin-left: auto;
-    margin-right: auto; 
-    display: flex;
-}
-.roundIcon
-{
-    margin: auto;
-    color: #111d2b;
-    font-size: 3em;
-}
-.containerWork
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.roundFacebook:hover
-{
-    background: #477eda;
-    transition: background 0.3s;
-}
-.roundTwitter:hover
-{
-    background: #03d0fc;
-    transition: background 0.3s;
-}
-.roundGoogle:hover
-{
-    background: #d91e00;
-    transition: background 0.3s;
-}
-@media screen and (max-width: 1100px)
-{
-    /* Rédigez vos propriétés CSS ici */
-    
-    body
-    {
-        font-size: 10px;
-    }
-    .containerContact
-    {
-        padding: 10px 1em;
-    }
-    .welcomeMsg
-    {
-        width: 450px;
-        margin-left: -225px;
-    }
-    nav ul
-    {
-        right: -12em;
-    }
-}
 
 
 
-
-
-
-
-
-
-.cardLight
-{
+.cardLight {
     width: 500px;
     max-height: 700px;
     margin: auto;
@@ -215,8 +56,7 @@ nav div a
     position: relative;
 }
 
-.cardDark
-{
+.cardDark {
     width: 500px;
     max-height: 700px;
     margin: auto;
@@ -226,79 +66,73 @@ nav div a
     color: white;
 }
 
-.cardContainer
-{
+.cardContainer {
     font-family: "Roboto", sans-serif;
     padding: 20px;
     border: none;
 }
-.cardTitle
-{
+
+.cardTitle {
     margin: 0;
     margin-bottom: 5px;
     font-size: 24px;
     font-weight: 300;
 }
-.cardWord:first-letter
-{
+
+.cardWord:first-letter {
     text-transform: uppercase;
 }
 
-.cardDark .cardLink
-{
+.cardDark .cardLink {
     margin-top: 10px;
     padding-top: 10px;
     width: 100%;
     border-top: 1px yellow solid;
 }
-.cardDark .link
-{
+
+.cardDark .link {
     transition: color 0.5s;
     color: yellow;
     text-decoration: none;
 }
-.cardWhite .cardLink
-{
+
+.cardWhite .cardLink {
     margin-top: 10px;
     padding-top: 10px;
     width: 100%;
     border-top: 1px red solid;
 }
-.cardWhite .link
-{
+
+.cardWhite .link {
     transition: color 0.5s;
     color: red;
     text-decoration: none;
 }
 
-.link:hover
-{
+.link:hover {
     color: white;
 }
 
-.cardImg
-{
+.cardImg {
     width: inherit;
     height: auto;
     border: none;
     margin-bottom: -5px;
 }
-.cardImgContainer
-{
+
+.cardImgContainer {
     width: inherit;
     height: auto;
     border: none;
 }
-.cardContainer .icon-more_vert
-{
+
+.cardContainer .icon-more_vert {
     font-size: 23px;
     text-align: right;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-
-.logoWeather
-{
+.logoWeather {
     font-family: "ico", sans-serif;
     font-size: 125px;
     color: #c0364d;
@@ -306,4 +140,3 @@ nav div a
     bottom: -10px;
     right: 10px;
 }
-
