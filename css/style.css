@@ -1,12 +1,13 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300";
 /* line 1, ../scss/base/_base.scss */
 body {
-  font-size: 16px;
-  border: none;
   padding: 0;
   margin: 0;
   width: 100%;
+  box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border: none;
   background: #1F222A;
 }
 
@@ -82,6 +83,21 @@ body {
   font-family: "ico", sans-serif;
   font-size: 125px;
   color: #c0364d;
+}
+
+/* line 4, ../scss/module/_searchbox.scss */
+.search-form input[type="submit"] {
+  display: none;
+}
+/* line 8, ../scss/module/_searchbox.scss */
+.search-form .search-form-bar {
+  font-size: 35px;
+  border: none;
+  padding: 20px;
+}
+/* line 12, ../scss/module/_searchbox.scss */
+.search-form .search-form-bar:active {
+  border: none;
 }
 
 @font-face {
