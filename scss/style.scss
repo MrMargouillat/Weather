@@ -1,0 +1,42 @@
+.link:hover {
+    color: white;
+}
+
+.cardImg {
+    width: inherit;
+    height: auto;
+    border: none;
+    margin-bottom: -5px;
+}
+
+.cardImgContainer {
+    width: inherit;
+    height: auto;
+    border: none;
+}
+
+.cardContainer .icon-more_vert {
+    font-size: 23px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.logoWeather {
+    font-family: "ico", sans-serif;
+    font-size: 125px;
+    color: #c0364d;
+    position: absolute;
+    bottom: -5px;
+    right: 10px;
+}
+
+@media only screen and ( max-width: 500px) {
+    .container
+    {
+        padding: 0;
+    }
+    .cardLight
+    {
+        width: 100%;
+    }
+}

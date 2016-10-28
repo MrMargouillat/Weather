@@ -1,135 +1,35 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:300';
-@font-face {
-    font-family: 'ico';
-    src: url('../fonts/artill_clean_icons.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    font-size: 16px;
-    border: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    background: #1F222A;
-}
-
-
-.container {
-    padding: 3em 18.75em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-
-
-.cardLight {
-    width: 500px;
-    max-height: 700px;
-    margin: auto;
-    margin-top: 50px;
-    box-shadow: 5px 5px 10px rgba(22, 22, 22, 0.5);
-    background: white;
-    color: black;
-    position: relative;
-}
-
-.cardDark {
-    width: 500px;
-    max-height: 700px;
-    margin: auto;
-    margin-top: 50px;
-    box-shadow: 5px 5px 10px rgba(22, 22, 22, 0.5);
-    background: #546e7a;
-    color: white;
-}
-
-.cardContainer {
-    font-family: "Roboto", sans-serif;
-    padding: 20px;
-    border: none;
-}
-
-.cardTitle {
-    margin: 0;
-    margin-bottom: 5px;
-    font-size: 24px;
-    font-weight: 300;
-}
-
-.cardWord:first-letter {
-    text-transform: uppercase;
-}
-
-.cardDark .cardLink {
-    margin-top: 10px;
-    padding-top: 10px;
-    width: 100%;
-    border-top: 1px yellow solid;
-}
-
-.cardDark .link {
-    transition: color 0.5s;
-    color: yellow;
-    text-decoration: none;
-}
-
-.cardWhite .cardLink {
-    margin-top: 10px;
-    padding-top: 10px;
-    width: 100%;
-    border-top: 1px red solid;
-}
-
-.cardWhite .link {
-    transition: color 0.5s;
-    color: red;
-    text-decoration: none;
-}
-
 .link:hover {
-    color: white;
-}
+  color: white; }
 
 .cardImg {
-    width: inherit;
-    height: auto;
-    border: none;
-    margin-bottom: -5px;
-}
+  width: inherit;
+  height: auto;
+  border: none;
+  margin-bottom: -5px; }
 
 .cardImgContainer {
-    width: inherit;
-    height: auto;
-    border: none;
-}
+  width: inherit;
+  height: auto;
+  border: none; }
 
 .cardContainer .icon-more_vert {
-    font-size: 23px;
-    text-align: right;
-    cursor: pointer;
-}
+  font-size: 23px;
+  text-align: right;
+  cursor: pointer; }
 
 .logoWeather {
-    font-family: "ico", sans-serif;
-    font-size: 125px;
-    color: #c0364d;
-    position: absolute;
-    bottom: -5px;
-    right: 10px;
-}
+  font-family: "ico", sans-serif;
+  font-size: 125px;
+  color: #c0364d;
+  position: absolute;
+  bottom: -5px;
+  right: 10px; }
 
-@media only screen and ( max-width: 500px) {
-    .container
-    {
-        padding: 0;
-    }
-    .cardLight
-    {
-        width: 100%;
-    }
-}
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 0; }
+
+  .cardLight {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
