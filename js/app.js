@@ -39,11 +39,11 @@ function requestWeater(elem , str){
 			{
 				 parse = JSON.parse(xhr.responseText);
 
-				 elem.querySelector(".cardTitle").innerText = parse.name
+				 elem.querySelector(".card-title").innerText = parse.name
 
-				 elem.querySelector(".cardTemperature").innerText = parse.main.temp + " °C";
+				 elem.querySelector(".card-temperature").innerText = parse.main.temp + " °C";
 
-				 elem.querySelector(".cardWord").innerText = parse.weather[0].description;	
+				 elem.querySelector(".card-word").innerText = parse.weather[0].description;	
 
 
 				var id = parse.weather[0].id;
@@ -53,43 +53,43 @@ function requestWeater(elem , str){
 				*/
 				if(id >= 200 && id <300 || id >= 520 && id < 600)
 				{
-					elem.querySelector(".logoWeather").innerText = "Q"	
+					elem.querySelector(".card-logo-weather").innerText = "Q"	
 				}
 				else if(id >= 300 && id < 400)
 				{
-					elem.querySelector(".logoWeather").innerText = "U"	
+					elem.querySelector(".card-logo-weather").innerText = "U"	
 				}
 				else if(id >= 500 && id < 505)
 				{
-					elem.querySelector(".logoWeather").innerText = "J"
+					elem.querySelector(".card-logo-weather").innerText = "J"
 				}
 				else if(id == 511 || id >= 600 && id < 700)
 				{
-					elem.querySelector(".logoWeather").innerText = "I"
+					elem.querySelector(".card-logo-weather").innerText = "I"
 				}
 				else if(id >= 700 && id < 800	)
 				{
-					elem.querySelector(".logoWeather").innerText = "B"
+					elem.querySelector(".card-logo-weather").innerText = "B"
 				}
 				else if(id === 800)
 				{
-					elem.querySelector(".logoWeather").innerText = "1"
+					elem.querySelector(".card-logo-weather").innerText = "1"
 				}
 				else if(id === 801)
 				{
-					elem.querySelector(".logoWeather").innerText = "A"
+					elem.querySelector(".card-logo-weather").innerText = "A"
 				}
 				else if(id === 802)
 				{
-					elem.querySelector(".logoWeather").innerText = "3"
+					elem.querySelector(".card-logo-weather").innerText = "3"
 				}
 				else if(id === 803|| id === 804)
 				{
-					elem.querySelector(".logoWeather").innerText = "3"
+					elem.querySelector(".card-logo-weather").innerText = "3"
 				}
 				else
 				{
-					elem.querySelector(".logoWeather").innerText = ":"
+					elem.querySelector(".card-logo-weather").innerText = ":"
 				}
 			}
 			else

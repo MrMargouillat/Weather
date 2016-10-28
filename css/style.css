@@ -1,9 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300";
-@font-face {
-  font-family: 'ico';
-  src: url("../fonts/artill_clean_icons.otf");
-  font-weight: normal;
-  font-style: normal; }
+/* line 1, ../scss/base/_base.scss */
 body {
   font-size: 16px;
   border: none;
@@ -11,15 +7,26 @@ body {
   margin: 0;
   width: 100%;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background: #1F222A; }
+  background: #1F222A;
+}
 
+/* line 2, ../scss/layout/_grid.scss */
 .container {
   padding: 3em 18.75em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+}
+@media only screen and (max-width: 500px) {
+  /* line 2, ../scss/layout/_grid.scss */
+  .container {
+    padding: 0;
+  }
+}
 
-.cardLight {
+/* line 1, ../scss/module/_weather.scss */
+.card-light {
+  position: relative;
   width: 500px;
   max-height: 700px;
   margin: auto;
@@ -27,85 +34,59 @@ body {
   box-shadow: 5px 5px 10px rgba(22, 22, 22, 0.5);
   background: white;
   color: black;
-  position: relative; }
+}
+@media only screen and (max-width: 500px) {
+  /* line 1, ../scss/module/_weather.scss */
+  .card-light {
+    width: 100%;
+  }
+}
 
-.cardDark {
-  width: 500px;
-  max-height: 700px;
-  margin: auto;
-  margin-top: 50px;
-  box-shadow: 5px 5px 10px rgba(22, 22, 22, 0.5);
-  background: #546e7a;
-  color: white; }
-
-.cardContainer {
-  font-family: "Roboto", sans-serif;
+/* line 16, ../scss/module/_weather.scss */
+.card-container {
   padding: 20px;
-  border: none; }
+  border: none;
+}
 
-.cardTitle {
+/* line 21, ../scss/module/_weather.scss */
+.card-title {
   margin: 0;
   margin-bottom: 5px;
   font-size: 24px;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
-.cardWord:first-letter {
-  text-transform: uppercase; }
+/* line 29, ../scss/module/_weather.scss */
+.card-word:first-letter {
+  text-transform: uppercase;
+}
 
-.cardDark .cardLink {
-  margin-top: 10px;
-  padding-top: 10px;
-  width: 100%;
-  border-top: 1px yellow solid; }
+/* line 34, ../scss/module/_weather.scss */
+.card-img {
+  width: inherit;
+  margin-bottom: -5px;
+}
 
-.cardDark .link {
-  transition: color 0.5s;
-  color: yellow;
-  text-decoration: none; }
-
-.cardWhite .cardLink {
-  margin-top: 10px;
-  padding-top: 10px;
-  width: 100%;
-  border-top: 1px red solid; }
-
-.cardWhite .link {
-  transition: color 0.5s;
-  color: red;
-  text-decoration: none; }
-
-.link:hover {
-  color: white; }
-
-.cardImg {
+/* line 39, ../scss/module/_weather.scss */
+.card-container-img {
   width: inherit;
   height: auto;
   border: none;
-  margin-bottom: -5px; }
+}
 
-.cardImgContainer {
-  width: inherit;
-  height: auto;
-  border: none; }
-
-.cardContainer .icon-more_vert {
-  font-size: 23px;
-  text-align: right;
-  cursor: pointer; }
-
-.logoWeather {
+/* line 45, ../scss/module/_weather.scss */
+.card-logo-weather {
+  position: absolute;
+  bottom: -5px;
+  right: 10px;
   font-family: "ico", sans-serif;
   font-size: 125px;
   color: #c0364d;
-  position: absolute;
-  bottom: -5px;
-  right: 10px; }
+}
 
-@media only screen and (max-width: 500px) {
-  .container {
-    padding: 0; }
-
-  .cardLight {
-    width: 100%; } }
-
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: 'ico';
+  src: url("../fonts/artill_clean_icons.otf");
+  font-weight: normal;
+  font-style: normal;
+}

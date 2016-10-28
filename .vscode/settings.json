@@ -1,0 +1,10 @@
+// Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut et les paramètres utilisateur.
+{
+	"editor.fontSize": 15,
+	"editor.fontFamily": "'Open sans', Consolas, 'Courier New', monospace",
+	"editor.renderIndentGuides": true,
+	"editor.insertSpaces": false,
+
+    // Quand vous ouvrez un fichier, 'editor.tabSize' et 'editor.insertSpaces' sont détectés en fonction du contenu du fichier.
+    "editor.detectIndentation": false,
+}
