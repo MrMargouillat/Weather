@@ -119,10 +119,3 @@ var nordenjson = requestWeater(norden, "Norden,de");
 
 
 }())
-
-function jsoncallback(data){
-	console.log(data)
-}
-$(document).ready(function() {
-	$.getJSON("https://fr.search.yahoo.com/sugg/gossip/gossip-fr-sayt?output=jsonp&command=bla&nresults=10");
-});

@@ -1,18 +1,18 @@
 .search-form
 {
-
 		input[type="submit"]
 		{
 			display: none;
 		}
 		.search-form-bar
 		{
-			font-size: 35px;
+			font-size: 2em;
 			border: none;
 			&:active
 			{
 				border: none;
 			}
 			padding: 20px;
+
 		}
 }

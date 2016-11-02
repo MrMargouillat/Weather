@@ -11,6 +11,9 @@ body {
   background: #1F222A;
 }
 
+@media only screen and (max-width: 480px) {
+  font-size: 13px;
+}
 /* line 2, ../scss/layout/_grid.scss */
 .container {
   padding-top: 3em;
@@ -21,38 +24,68 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   /* line 2, ../scss/layout/_grid.scss */
   .container {
     padding: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
   }
 }
 
 /* line 1, ../scss/module/_card.scss */
-.card-light {
+.card-dark, .card-light {
   position: relative;
   width: 500px;
   max-height: 700px;
   margin: auto;
   margin-top: 50px;
   box-shadow: 5px 5px 10px rgba(22, 22, 22, 0.5);
-  background: white;
-  color: black;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   /* line 1, ../scss/module/_card.scss */
-  .card-light {
+  .card-dark, .card-light {
+    margin: 0;
     width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
 
-/* line 16, ../scss/module/_card.scss */
+/* line 17, ../scss/module/_card.scss */
+.card-light {
+  background: white;
+  color: black;
+}
+/* line 18, ../scss/module/_card.scss */
+.card-light .card-link {
+  margin-top: 10px;
+  padding-top: 10px;
+  width: 100%;
+  border-top: 1px red solid;
+}
+
+/* line 31, ../scss/module/_card.scss */
+.card-dark {
+  background: #546e7a;
+  color: white;
+}
+/* line 35, ../scss/module/_card.scss */
+.card-dark .card-link {
+  margin-top: 10px;
+  padding-top: 10px;
+  width: 100%;
+  border-top: 1px yellow solid;
+}
+
+/* line 48, ../scss/module/_card.scss */
 .card-container {
   padding: 20px;
   border: none;
 }
 
-/* line 21, ../scss/module/_card.scss */
+/* line 53, ../scss/module/_card.scss */
 .card-title {
   margin: 0;
   margin-bottom: 5px;
@@ -60,25 +93,25 @@ body {
   font-weight: 300;
 }
 
-/* line 29, ../scss/module/_card.scss */
+/* line 61, ../scss/module/_card.scss */
 .card-word:first-letter {
   text-transform: uppercase;
 }
 
-/* line 34, ../scss/module/_card.scss */
+/* line 66, ../scss/module/_card.scss */
 .card-img {
   width: inherit;
   margin-bottom: -5px;
 }
 
-/* line 39, ../scss/module/_card.scss */
+/* line 71, ../scss/module/_card.scss */
 .card-container-img {
   width: inherit;
   height: auto;
   border: none;
 }
 
-/* line 45, ../scss/module/_card.scss */
+/* line 77, ../scss/module/_card.scss */
 .card-logo-weather {
   position: absolute;
   bottom: -5px;
@@ -88,17 +121,17 @@ body {
   color: #c0364d;
 }
 
-/* line 4, ../scss/module/_searchbox.scss */
+/* line 3, ../scss/module/_searchbox.scss */
 .search-form input[type="submit"] {
   display: none;
 }
-/* line 8, ../scss/module/_searchbox.scss */
+/* line 7, ../scss/module/_searchbox.scss */
 .search-form .search-form-bar {
-  font-size: 35px;
+  font-size: 2em;
   border: none;
   padding: 20px;
 }
-/* line 12, ../scss/module/_searchbox.scss */
+/* line 11, ../scss/module/_searchbox.scss */
 .search-form .search-form-bar:active {
   border: none;
 }
