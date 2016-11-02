@@ -13,7 +13,10 @@ body {
 
 /* line 2, ../scss/layout/_grid.scss */
 .container {
-  padding: 3em 18.75em;
+  padding-top: 3em;
+  padding-right: 18.75em;
+  padding-bottom: 0;
+  padding-left: 18.75em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -25,7 +28,7 @@ body {
   }
 }
 
-/* line 1, ../scss/module/_weather.scss */
+/* line 1, ../scss/module/_card.scss */
 .card-light {
   position: relative;
   width: 500px;
@@ -37,19 +40,19 @@ body {
   color: black;
 }
 @media only screen and (max-width: 500px) {
-  /* line 1, ../scss/module/_weather.scss */
+  /* line 1, ../scss/module/_card.scss */
   .card-light {
     width: 100%;
   }
 }
 
-/* line 16, ../scss/module/_weather.scss */
+/* line 16, ../scss/module/_card.scss */
 .card-container {
   padding: 20px;
   border: none;
 }
 
-/* line 21, ../scss/module/_weather.scss */
+/* line 21, ../scss/module/_card.scss */
 .card-title {
   margin: 0;
   margin-bottom: 5px;
@@ -57,25 +60,25 @@ body {
   font-weight: 300;
 }
 
-/* line 29, ../scss/module/_weather.scss */
+/* line 29, ../scss/module/_card.scss */
 .card-word:first-letter {
   text-transform: uppercase;
 }
 
-/* line 34, ../scss/module/_weather.scss */
+/* line 34, ../scss/module/_card.scss */
 .card-img {
   width: inherit;
   margin-bottom: -5px;
 }
 
-/* line 39, ../scss/module/_weather.scss */
+/* line 39, ../scss/module/_card.scss */
 .card-container-img {
   width: inherit;
   height: auto;
   border: none;
 }
 
-/* line 45, ../scss/module/_weather.scss */
+/* line 45, ../scss/module/_card.scss */
 .card-logo-weather {
   position: absolute;
   bottom: -5px;
