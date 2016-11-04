@@ -31,7 +31,7 @@
 
 function requestWeater(elem , str){
 	var xhr = getHttpRequest();
-	xhr.open("GET","//api.openweathermap.org/data/2.5/weather?q="+ str +"&appid=bb2ca672d35f1428507d1b4907c03cfa&units=metric&&lang=fr", true);
+	xhr.open("GET","http://api.openweathermap.org/data/2.5/weather?q="+ str +"&appid=bb2ca672d35f1428507d1b4907c03cfa&units=metric&&lang=fr", true);
 	xhr.send();
 	xhr.onreadystatechange = function(){
 		if(xhr.readyState == 4)
